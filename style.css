@@ -1,0 +1,84 @@
+/* Premium Black + Gold Theme */
+body {
+  background-color: #000;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculator {
+  background: #111;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px gold;
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* left = numbers, right = signs */
+  gap: 20px;
+  max-width: 700px;
+}
+
+#display {
+  grid-column: span 2;
+  background: #000;
+  color: gold;
+  font-size: 2em;
+  text-align: right;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid gold;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px gold;
+}
+
+/* Number Buttons (Yellow side) */
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 12px;
+  justify-content: center;
+}
+
+.numbers button {
+  background: yellow;
+  color: black;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.numbers button:hover {
+  background: #ffea00;
+  box-shadow: 0 0 10px yellow;
+}
+
+/* Sign Buttons (Orange side) */
+.signs {
+  display: grid;
+  grid-template-columns: repeat(2, 80px);
+  gap: 12px;
+  justify-content: center;
+}
+
+.signs button {
+  background: orange;
+  color: black;
+  font-size: 1.1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signs button:hover {
+  background: #ff9933;
+  box-shadow: 0 0 10px orange;
+}
